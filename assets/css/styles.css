@@ -1,0 +1,53 @@
+body, html {
+  margin:           0;
+  padding:          0;
+  height:           100%;
+  width:            100%;
+  scroll-behavior:  smooth;
+  }
+p, h1, h2, h3, h4, h5, h6, figure, ul {
+  margin:           0;
+}
+ul {
+  padding:          0;
+}
+figcaption {
+  height:           50px;
+  padding:          4px 8px;
+}
+.text-uppercase {
+  text-transform:   uppercase;
+}
+.text-break {
+  word-break:       break-word;
+}
+.font-weight-bold {
+  font-weight:      bold;
+}
+.pl-1 {
+  padding-left:     4px;
+}
+.pr-1 {
+  padding-right:    4px;
+}
+.mt-1 {
+  margin-top:       4px;
+}
+.mt-2 {
+  margin-top:       8px;
+}
+.mt-3 {
+  margin-top:       16px;
+}
+.mt-4 {
+  margin-top:       32px;
+}
+.mt-5 {
+  margin-top:       64px;
+}
+.mb-1 {
+  margin-bottom:    8px;
+}
+.w-100 {
+  width:            100%;
+}
