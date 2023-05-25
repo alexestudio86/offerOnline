@@ -1,0 +1,21 @@
+navbar {
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+.logo {
+    background: #ffffff;
+    box-shadow: 0 0 0 4px #3a98e2, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    position: absolute;
+}
+
+.border-logo{
+    padding: 10px;
+}

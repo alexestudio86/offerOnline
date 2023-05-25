@@ -1,0 +1,12 @@
+:root {
+    --bg-body-color: #dfe3e5;
+}
+   
+  body {
+    background-color: var(--bg-body-color);
+  }
+
+  .container {
+    max-width: 980px;
+    margin: auto;
+  }
