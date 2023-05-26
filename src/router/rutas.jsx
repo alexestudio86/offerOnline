@@ -16,4 +16,6 @@ export const rutas = createBrowserRouter([
             }
         ]
     }
-])
+], {
+    basename: '/offerOnline/'
+})
