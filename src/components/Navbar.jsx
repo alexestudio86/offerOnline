@@ -20,8 +20,23 @@ export function Navbar ( ){
         }
     ]
 
+    const elements = [
+        {
+            name:           'home',
+            url:            '/a'
+        },
+        {
+            name:           'tienda',
+            url:            '/b'
+        },
+        {
+            name:           'contacto',
+            url:            '/c'
+        }
+    ]
+
     return (
-        <nav className='py-2'>
+        <div className='nav-Container py-2'>
             <ul className='float-end'>{ icons.map( (icon, idx) =>  
                     <li className='p-1' key={idx}>
                         <a href={icon.url}>
@@ -31,10 +46,23 @@ export function Navbar ( ){
                 ) }
             </ul>
             <div className='logo'>
-                <Link className='border-logo' to='/'>
+                <Link to='/'>
                     <img src={logo} alt="Logo" width='150' height='125' />
                 </Link>
             </div>
-        </nav>
+            <header className='float-end'>
+                <h1>Ofertas, Descuentos y mas...</h1>
+            </header>
+            <nav className='nav navbar navbar-expand-lg'>
+                <ul className='navbar-nav container-fluid justify-content-end'>{ elements.map( (element, idx) =>
+                    <li className='nav-item' key={idx}>
+                        <Link className='nav-link text-light' to={element.url}>
+                            { element.name }
+                        </Link>
+                    </li>
+                ) }
+                </ul>
+            </nav>
+        </div>
     )
 }
