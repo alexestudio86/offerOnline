@@ -1,12 +1,24 @@
 :root {
-    --bg-body-color: #dfe3e5;
+  --bg-body-color: #dfe3e5;
+  --text-color: #0091d6;
 }
-   
-  body {
-    background-color: var(--bg-body-color);
-  }
+  
+body {
+  font-family: Exo, Arial, Tahoma, sans-serif;
+  background-color: var(--bg-body-color);
+  font-weight: 300;
+}
 
-  .container {
-    max-width: 980px;
-    margin: auto;
-  }
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+.text {
+  color: var(--text-color);
+}
+
+.link {
+  outline: none;
+  text-decoration: none;
+}

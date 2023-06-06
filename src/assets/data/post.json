@@ -1,0 +1,61 @@
+{
+    "items": [
+        {
+            "title": "Castillo de Princesas",
+            "id": "3584656075705827158",
+            "creation":"Junio 13, 2023",
+            "author": "Alejandro R",
+            "price": "1000",
+            "labels": ["Novedades"],
+            "gallery": [
+                {
+                    "title": "Casa_Princesas-01",
+                    "url": "/offerOnline/src/assets/products/Casa_Princesas-01.jpg"
+                },
+                {
+                    "title": "Casa_Princesas-02",
+                    "url": "/offerOnline/src/assets/products/Casa_Princesas-02.jpg"
+                },                {
+                    "title": "Casa_Princesas-3",
+                    "url": "/offerOnline/src/assets/products/Casa_Princesas-03.jpg"
+                }
+            ],
+            "description": {
+                "summary": "Divierte a tus pequeños con éste hermosa casa de campaña con diseño de casillo de princesas, está diseñado para interiores y exteriores, ligero y fácil de transportar. Las estrellas del diseño de la carpa ¡brillan en la obscuridad! Incluye bolsa de viaje para transportarse fácilmente",
+                "brand": "SueSport",
+                "color": "Rosa acorde a la ilustración (Los tonos pueden variar ligeramente)",
+                "weight": "1.2kg",
+                "size": "102 x 135 (cm)",
+                "age": "+1 año"
+            }
+        },{
+            "title": "Halo 5 Guardians | Xbox ONE",
+            "id": "2741237852259582229",
+            "creation":"Junio 13, 2023",
+            "author": "Alejandro R",
+            "price": "450",
+            "labels": ["Ofertas", "Videojuegos"],
+            "gallery": [
+                {
+                    "title": "Halo 5 Guardians 01",
+                    "url": "/offerOnline/src/assets/products/H5G-01.jpg"
+                },
+                {
+                    "title": "Halo 5 Guardians 02",
+                    "url": "/offerOnline/src/assets/products/H5G-02.jpg"
+                },                {
+                    "title": "Halo 5 Guardians 03",
+                    "url": "/offerOnline/src/assets/products/H5G-03.jpg"
+                }
+            ],
+            "description": {
+                "summary": "La paz llega cuando Los planetas-colonia son atacados por sorpresa. Con El mayor héroe de la humanidad en paradero desconocido, al Spartan Locke se le encomienda La Misión de dar caza al Jefe Maestro y de resolución de un misterio Que Amenaza A Toda la Galaxia. Halo 5: Guardianes , en exclusiva para Xbox One, Es continuación de la historia del Jefe Maestro e introducen Un Nuevo personaje central de linea El Universo de halo: el Spartan Locke",
+                "brand": "Microsoft",
+                "color": "Clasificación/T",
+                "weight": "Genero/Acción FPS",
+                "size": "10cmx15xm",
+                "age": "+18 año(s)"
+            }
+        }
+    ]
+}

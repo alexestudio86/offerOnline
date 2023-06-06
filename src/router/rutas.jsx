@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../layout/Layout";
 import { NotFound } from "../components/NotFound";
 import { App } from "../App";
+import { getHomeProducts } from '../context/jsonCalls';
 
 
 export const rutas = createBrowserRouter([
@@ -12,7 +13,8 @@ export const rutas = createBrowserRouter([
         children: [
             {
                 index:      true,
-                element:    <App />
+                element:    <App />,
+                loader:     getHomeProducts
             }
         ]
     }
