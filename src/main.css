@@ -1,24 +1,17 @@
-:root {
-  --bg-body-color: #dfe3e5;
-  --text-color: #0091d6;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth
 }
-  
-body {
-  font-family: Exo, Arial, Tahoma, sans-serif;
-  background-color: var(--bg-body-color);
-  font-weight: 300;
+p, h1, h2, h3, h4, h5, h6, figure, ul {
+    margin: 0
 }
-
-.container {
-  max-width: 980px;
-  margin: auto;
+ul {
+    padding: 0
 }
-
-.text {
-  color: var(--text-color);
-}
-
-.link {
-  outline: none;
-  text-decoration: none;
+figcaption {
+    height: 50px;
+    padding: 4px 8px
 }

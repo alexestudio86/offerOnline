@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export function Products ( ){
@@ -7,31 +8,23 @@ export function Products ( ){
     const items = posts.items;
 
     return (
-        <main>
+        <main className="row">
             { items ? items.map( (item, index) =>(
-                <article className="pb-2" key={index}>
-                    <div className="bg-white">
-                        <header>
-                            <h1 className="text text-uppercase fs-1">
-                                <a className="link" href="/">{ item.title }</a>
-                            </h1>
-                            <div className="border-top border-bottom border-white">
-                                <time className="p-2">{ item.creation }</time>
-                                <cite className="p-2">{ item.author }</cite>
-                                { item.labels ? item.labels.map( (label, idx) => (
-                                    <span key={idx}>{ label }</span>
-                                ) ) :
-                                    <span>No hay Labels</span>
-                                }
-                            </div>
-                        </header>
-                        <div>
-                            { item.gallery.length > 0 ?
-                                <img className="w-100" src={ item.gallery[0].url } alt={ item.title } />
-                                :
-                                <p>No hay imágenes</p>
-                            }
-                        </div>
+                <article className="row p-3 bg-white mb-4" key={index}>
+                    <div className="col-md-6">
+                        { item.gallery.length > 0 ?
+                            <img className="w-100" src={ item.gallery[0].url } alt={ item.title } />
+                            :
+                            <p>No hay imágenes</p>
+                        }
+                    </div>
+                    <div className="col-md-6 text-end">
+                        <span className="fs-4 fw-bold text-info text-uppercase">Ver mas</span>
+                    </div>
+                    <div className="col-md-12">
+                        <h1 className="text-uppercase fs-1">
+                            <Link className="link-info" to={`/products/${item.id}`}>{ item.title }</Link>
+                        </h1>
                     </div>
                 </article>
             ) ) :

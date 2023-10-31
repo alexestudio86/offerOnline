@@ -36,33 +36,35 @@ export function Navbar ( ){
     ]
 
     return (
-        <div className='nav-Container py-2'>
-            <ul className='float-end'>{ icons.map( (icon, idx) =>  
-                    <li className='p-1' key={idx}>
-                        <a href={icon.url}>
-                            <i className={ `${icon.description} ${icon.color} fa-2xl` }></i>
-                        </a>
-                    </li>
-                ) }
-            </ul>
-            <div className='logo'>
-                <Link to='/'>
+        <div className="py-4">
+            <div className='d-flex'>
+                <Link className='border border-info mb-2 p-3' to='/'>
                     <img src={logo} alt="Logo" width='150' height='125' />
                 </Link>
+                <div className="flex-grow-1">
+                    <div className='d-flex justify-content-end align-items-center'>
+                        <header>
+                            <h1>Ofertas, Descuentos y mas...</h1>
+                        </header>
+                        <ul>{ icons.map( (icon, idx) =>  
+                            <li className='p-1' key={idx}>
+                                <a href={icon.url}>
+                                    <i className={ `${icon.description} ${icon.color} fa-2xl` }></i>
+                                </a>
+                            </li>
+                        ) }</ul>
+                    </div>
+                    <nav className='nav navbar navbar-expand-lg'>
+                        <ul className='navbar-nav container-fluid justify-content-end'>{ elements.map( (element, idx) =>
+                            <li className='nav-item' key={idx}>
+                                <Link className='nav-link text-light' to={element.url}>
+                                    { element.name }
+                                </Link>
+                            </li>
+                        ) }</ul>
+                    </nav>
+                </div>
             </div>
-            <header className='float-end'>
-                <h1>Ofertas, Descuentos y mas...</h1>
-            </header>
-            <nav className='nav navbar navbar-expand-lg'>
-                <ul className='navbar-nav container-fluid justify-content-end'>{ elements.map( (element, idx) =>
-                    <li className='nav-item' key={idx}>
-                        <Link className='nav-link text-light' to={element.url}>
-                            { element.name }
-                        </Link>
-                    </li>
-                ) }
-                </ul>
-            </nav>
         </div>
     )
 }

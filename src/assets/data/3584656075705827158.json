@@ -1,0 +1,30 @@
+{
+    "title": "Castillo de Princesas",
+    "id": "3584656075705827158",
+    "creation":"Junio 13, 2023",
+    "author": "Alejandro R",
+    "price": "1000",
+    "labels": ["Novedades"],
+    "gallery": [
+        {
+            "title": "Casa_Princesas-01",
+            "url": "/offerOnline/src/assets/products/Casa_Princesas-01.jpg"
+        },
+        {
+            "title": "Casa_Princesas-02",
+            "url": "/offerOnline/src/assets/products/Casa_Princesas-02.jpg"
+        },                {
+            "title": "Casa_Princesas-3",
+            "url": "/offerOnline/src/assets/products/Casa_Princesas-03.jpg"
+        }
+    ],
+    "description": {
+        "summary": "Divierte a tus pequeños con éste hermosa casa de campaña con diseño de casillo de princesas, está diseñado para interiores y exteriores, ligero y fácil de transportar. Las estrellas del diseño de la carpa ¡brillan en la obscuridad! Incluye bolsa de viaje para transportarse fácilmente",
+        "brand": "SueSport",
+        "color": "Rosa acorde a la ilustración (Los tonos pueden variar ligeramente)",
+        "weight": "1.2kg",
+        "size": "102 x 135 (cm)",
+        "age": "+1 año"
+    },
+    "comments": "Soy un comment"
+}

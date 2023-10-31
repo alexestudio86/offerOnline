@@ -21,41 +21,43 @@ export function Header ( ){
     };
 
     return (
-        <div className='py-3'>
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                onAutoplayTimeLeft={onAutoplayTimeLeft}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    <img src={slide01} alt="Slide 01" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide02} alt="Slide 02" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide03} alt="Slide 03" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={slide04} alt="Slide 04" />
-                </SwiperSlide>
-                <div className="autoplay-progress" slot="container-end">
-                    <svg viewBox="0 0 48 48" ref={progressCircle}>
-                        <circle cx="24" cy="24" r="20"></circle>
-                    </svg>
-                    <span ref={progressContent}></span>
-                </div>
-            </Swiper>
+        <div className='row'>
+            <div className="col-md-12">
+                <Swiper
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    onAutoplayTimeLeft={onAutoplayTimeLeft}
+                    className="mySwiper"
+                >
+                    <SwiperSlide>
+                        <img src={slide01} alt="Slide 01" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide02} alt="Slide 02" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide03} alt="Slide 03" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={slide04} alt="Slide 04" />
+                    </SwiperSlide>
+                    <div className="autoplay-progress" slot="container-end">
+                        <svg viewBox="0 0 48 48" ref={progressCircle}>
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span ref={progressContent}></span>
+                    </div>
+                </Swiper>
+            </div>
         </div>
     )
 }
